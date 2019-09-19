@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  }
+
+  html, body {
+	font: 12px 'Segoe UI';
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+
+  #header {
+    flex: 0 0 50px;
+    -webkit-flex: 0 0 50px;
+	padding:12px 10px;
+	font:30px 'Segoe UI Light';
+  }
+
+  #footer {
+    flex: 0 0 30px;
+    -webkit-flex: 0 0 30px;
+	padding:12px 10px;
+  }
+
+  #main {
+    flex: 1 0 0px; /** Don't set parent of component to auto */
+    -webkit-flex: 1 0 0px; /** Don't set parent of component to auto */
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    min-height: 0px;
+  }
+
+  .panel {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    overflow: auto;
+  }
+  #right.panel {
+    flex: 0 0 200px;
+    -webkit-flex: 0 0 200px;
+  }
+  .bigpanel {
+    flex: 0 0 600px;
+    -webkit-flex: 0 0 600px;
+    max-width:600px;
+  }
+  #left.panel {
+    flex: 0 0 400px;
+    -webkit-flex: 0 0 400px;
+  }
+  #left2.panel {
+    flex: 0 0 400px;
+    -webkit-flex: 0 0 400px;
+  }
+  .largeChild {
+    margin: 5px;
+    padding: 0px;
+    min-height: 200px;
+    min-width: 10px;
+	height:100%
+  }    
+  #botWC{
+  position:relative;
+  background-color:white;
+  height:100%;
+  }
+
+  #propList {font:12px 'Segoe UI'}
+  #propList div {font:bold 10px 'Segoe UI'}
+#godiag {
+  padding-top:63px; width: 100%; height:100%; display: flex; justify-content: space-between;
+}
+#myPaletteDiv {
+  width: 105px; margin-right: 2px; background-color: whitesmoke; border: solid 1px black
+}
+#myDiagramDiv {flex-grow: 1; height: 100%; border: solid 1px black}
+
+.wc-header {
+  background-color: #0078d7;
+  box-shadow: 0px 1px rgba(0,0,0,0.2);
+  box-sizing: content-box;
+  color: #ffffff;
+  font-weight: 500;
+  height: 30px;
+  left: 0px;
+  letter-spacing: 0.5px;
+  padding: 8px 8px 0 8px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+  cursor:pointer;
+}
+button {
+  border: 1px solid gray;
+  padding: 5px;
+  cursor: pointer;
+}
+#tabhost{ padding-top:40px; display: flex; margin-left:110px;position: absolute;}
+#tabhost div{ 
+  border-left:1px solid black;
+  border-top:3px solid black;
+  border-right:1px solid black;
+  margin-right:5px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:2px;
+  padding-bottom:1px;
+  font:14px verdana;
+  cursor: pointer;
+}
+.tabsel {background-color: #EEEE10}
